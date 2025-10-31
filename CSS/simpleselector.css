@@ -1,0 +1,15 @@
+#main-header {
+                   color: blue;
+    }
+    #para1 {
+            background-color: grey;
+    }
+   .items {
+            color: green;
+   }
+   *{
+     color:palevioletred;
+   }
+   p.showinternal{
+    color: brown;
+   }
