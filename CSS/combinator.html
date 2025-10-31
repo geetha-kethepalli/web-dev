@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selector</title>
+    <style>
+    div h1{
+        color:green;
+    }
+    div>p{
+        color:blue;
+    }
+  h1+p{
+        color:orange;
+    }
+    p+h1{
+        color:greenyellow;
+   }
+   p~h1{
+    color:red;
+   }
+</style>
+    </head>
+</head>
+<body>
+    <h1>this is my first programme for Combinator</h1>
+    <div>
+        <h1>WELCOME</h1>
+        <P>In this selects all elements inside div element</P>
+    </div>
+   <div>
+    <h2>child selector</h2>
+    <p>selects every p element that are direct children of a div element</p>
+   </div>
+   <p>when p is adjacent to h1</p>
+   <h2>General sibling selector</h2>
+   <h1>Adjacent sibling selector</h1>
+</body>
+</html>
