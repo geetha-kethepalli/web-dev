@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo_selector</title>
+    <style>
+        input:checked {
+            color: blue;
+        }
+        div:empty{
+            color: #000;
+        }
+        /*mouse over link*/
+        a:hover{
+            color: orange;
+        }
+        /*visited link*/
+        a:visited{
+            color: green;
+        }
+        /*selected link*/
+        a:active{
+            color: red;
+        }
+        /*disable link*/
+        a:disabled{
+            color: bisque;
+        }
+        /*first-child*/
+        p:first-child{
+            color: blueviolet;
+        }
+        /*last-child*/
+        p:last-child{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo of checked:</h1>
+    <form>
+        <label><input type="radio" name="gender" value="female">FEMALE</label>
+        <label><input type="radio" name="gender" value="male">MALE</label><br>
+        <p>Select courses</p> 
+        <label><input type="checkbox" name="group" value="IT" >IT</label>
+        <label><input type="checkbox" name="group" value="CSE">CSE</label>
+        <label><input type="checkbox" name="group" value="ECE">ECE</label>
+    </form>
+    <div>
+        <p>when the div element is empty</p>
+    </div>
+    <div>
+        <p>this is first child</p>
+        <p>this is second child</p>
+        </div>
+    <p>This is for Hover</p>
+    <a href="https://www.amazon.in/ref=nav_logo" >This is the link</a>
+</body>
+</html>
