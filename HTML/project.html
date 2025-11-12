@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Swiggy</h1>
+        <p>Order your favorite food from top restaurants near you 🍕</p>
+    </header>
+
+    <nav>
+        <a href="#categories">Categories</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#signup">Sign Up</a>
+    </nav>
+
+    <main>
+        <!-- Food Categories -->
+        <section id="categories">
+            <h2>🍱 Food Categories</h2>
+            <div class="category-container">
+                <div class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Pizza">
+                    <p><span class="highlight">Pizza</span></p>
+                </div>
+                <div class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" alt="Burgers">
+                    <p><span class="highlight">Burgers</span></p>
+                </div>
+                <div class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3480/3480525.png" alt="Desserts">
+                    <p><span class="highlight">Desserts</span></p>
+                </div>
+                <div class="category">
+                    <img src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="South Indian">
+                    <p><span class="highlight">South Indian</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section id="restaurants">
+            <h2>🍔 Featured Restaurants</h2>
+            <div class="restaurants">
+                <div class="restaurant-card">
+                    <img src="https://source.unsplash.com/400x250/?restaurant,burger" alt="Burger Palace">
+                    <h3>Burger Palace</h3>
+                    <p>Fast Food • 4.5 ⭐ • ₹250 for two</p>
+                </div>
+                <div class="restaurant-card">
+                    <img src="https://source.unsplash.com/400x250/?pizza,food" alt="Italiano Pizza">
+                    <h3>Italiano Pizza</h3>
+                    <p>Italian • 4.3 ⭐ • ₹300 for two</p>
+                </div>
+                <div class="restaurant-card">
+                    <img src="https://source.unsplash.com/400x250/?indian,thali" alt="Taste of India">
+                    <h3>Taste of India</h3>
+                    <p>Indian • 4.7 ⭐ • ₹200 for two</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signup Form -->
+        <section id="signup">
+            <h2>🧡 Sign Up for Swiggy</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="city">Select City:</label>
+                <select id="city" name="city" required>
+                    <option value="">--Choose City--</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="mumbai">Mumbai</option>
+                </select>
+
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+
+                <input type="submit" value="Create Account">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Swiggy | Made with ❤️ for food lovers</p>
+    </footer>
+</body>
+</html>

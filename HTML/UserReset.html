@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTG Self-Service Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h2 { text-align: center; color: #333; }
+        label { display: block; margin-top: 15px; }
+        select, input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover { background-color: #005fa3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>TTG DB Credentials Self-Service</h2>
+    <form id="dbForm">
+        <label for="environment">Environment:</label>
+        <select id="environment" required>
+            <option value="">-- Select --</option>
+            <option value="D32">D32 (D-1)</option>
+            <option value="D62">D62 (TNR)</option>
+            <option value="D63">D63 (Referential)</option>
+        </select>
+
+        <label for="application">Application:</label>
+        <select id="application" required>
+            <option value="">-- Select --</option>
+            <option value="TPE_APP">ALISE</option>
+            <option value="TVA_APP">EOLE</option>
+            <option value="GAT_APP">GATE</option>
+        </select>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your email id here..." required>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <p id="responseMsg" style="color: green; margin-top: 10px;"></p>
+</div>
+
+<script>
+document.getElementById('dbForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const payload = {
+        environment: document.getElementById('environment').value,
+        application: document.getElementById('application').value,
+        username: document.getElementById('username').value
+    };
+
+    const response = await fetch('/api/reset_or_create', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+    });
+
+    const data = await response.json();
+    document.getElementById('responseMsg').innerText = data.message;
+});
+</script>
+
+</body>
+</html>

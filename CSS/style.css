@@ -1,0 +1,11 @@
+body{
+    background-color:beige;
+    padding: 0;
+    color:aqua;
+}
+/*Header*/
+header{
+    background-color: bisque;
+    color:black;
+    text-align:center;
+}

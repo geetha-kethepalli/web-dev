@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Geetha Lavanya</h1>
+        <!-- Navigation Section -->
+        <nav>
+            <!-- Unordered List -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- About ME Section -->
+        <section id="home">
+            <h2>About me</h2>
+            <!-- Image with Alt -->
+            <img src="Geeta.jpeg" height="100" width="100" alt="No Image">
+            <p>Hello! I’m Geetha Lavanya. I truly enjoy experimenting in the kitchen. Cooking is my favorite way to relax and bring happiness to my family. I love exploring new recipes from around the world. Social media inspires me to try creative dishes. Nothing makes me happier than seeing my family enjoy what I prepare. </p>
+        </section>
+
+        <!-- Skill Section -->
+        <section>
+            <h2>My Programming Skills</h2>
+            <!-- Ordered List -->
+            <ol>
+                <li>.NET</li>
+                <li>NodeJS</li>
+                <li>SQL</li>
+            </ol>
+        </section>
+
+        <!-- Project Section -->
+        <article id="projects">
+            <h2>Sample project</h2>
+            <h3><a href="layout tags 1.html">Restaurants</a></h3>
+            <p>Restaurants are vibrant places where food, flavor, and people come together. Each restaurant tells a unique story through its dishes — from spicy Indian curries to cheesy Italian pizzas and creamy desserts.</p>
+        </article>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm"  aria-label="Contact Form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required minlength="3"  placeholder="Enter your name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required  placeholder="example@email.com"><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <!-- Pattern for 10-digit phone number -->
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"  maxlength="10" required placeholder="Enter 10-digit phone number"><br><br>
+
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" placeholder="Optional" maxlength="250" size="50" aria-required="true"><br><br>
+
+                <label for="message" >Message:</label><br>
+                <textarea name="message" rows="4" cols="80" maxlength="1000" required aria-required="true" minlength="10" placeholder="Write your message here"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+               <!-- Footer -->
+        <footer>
+             <p>&copy; 2025 all rights are reserved</p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignment 1</title>
+
+    <!--Link in External CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Geetha Lavanya</h1>
+        <!-- Navigation Section -->
+        <nav>
+            <!-- Unordered List -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- About ME Section -->
+        <section id="home">
+            <h2>About me</h2>
+            <!-- Image with Alt -->
+            <img src="Geeta.jpeg" height="100" width="100" alt="No Image">
+            <p>Hello! I’m Geetha Lavanya — a tech enthusiast with a B.Tech in IT (2006) and a growing passion for
+                AI-driven web development. I’m currently upskilling in Full Stack Web Development (MERN) to bring ideas
+                to life through smart and creative web solutions.</p>
+        </section>
+
+        <!-- Skill Section -->
+        <section>
+            <h2>My Web Development Skills</h2>
+            <!-- Ordered List -->
+            <ol>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </section>
+
+        <!-- Project Section -->
+        <article id="projects">
+            <h2>Sample project</h2>
+            <h3><a href="layout tags 2.html">NBA</a></h3>
+            <p>The NBA project webpage is developed using HTML semantic layout elements such as header, section,
+                navigation, main, article, footer, and aside to ensure a well-structured and accessible design.</p>
+        </article>
+
+        <!-- Contact Section -->
+        <article id="contact">
+            <h1>Contact form</h1>
+            <!-- Forms -->
+            <form action="" method="get">
+
+                <!-- Labeled contact forms for input -->
+                <label for="name">Name:</label><br>
+                <input type="text" id="name">
+                
+                <br><br>
+                
+                <label for="phno">Contact No:</label><br>
+                <input type="number" id="number">
+                
+                <br><br>
+                
+                <label for="e-mail">E-mail:</label><br>
+                <input type="text" id="e-mail" required="@">
+                
+                <br><br>
+                
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" maxlength="250" size="50">
+                
+                <br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="80" maxlength="1000" placeholder="Enter your message here..."></textarea>
+                
+                <br><br>
+                
+                <input type="Submit">
+                <br><br>
+            </form>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 all rights are reserved</p>
+    </footer>
+</body>
+
+</html>

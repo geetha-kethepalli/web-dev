@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive media queries</title>
+    <style>
+           .container{
+            background-color: brown;
+            padding:20px;
+           }
+           @media screen ,print{
+            .container{
+                color:blue;
+            }
+           }
+          @media(min-width:300px){
+            .container{
+                background-color: yellow;<
+            }
+           }
+           
+          
+           @media(min-height:300px)and(max-height:600px){
+            .container{
+                background-color: orange;
+            }
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World!</h1>
+    </div>
+</body>
+</html>
