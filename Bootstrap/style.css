@@ -1,0 +1,44 @@
+.btn-geetha{
+    background-color: rgb(206, 37, 93);
+    
+    color: white;
+} 
+h1{
+text-align: center;
+
+}
+.button--bgpink {
+    color: #fff;
+    background-color: #f20c90;
+    text-align: center;
+    border: 1px solid #F20C90;
+    font-weight: bold;
+    font-size: 22px;
+}
+.button--bgpink:hover {
+    background-color: #d90a81;
+    border: 1px solid #d90a81;
+        color: #fff;
+}
+.button {
+    font-family: Arial;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #F20C90;
+    background-color: #fff;
+    transition: background-color .15s ease 0s, box-shadow, color;
+    min-height: 2.75rem;
+    padding: .5rem 1.25rem;
+    border-radius: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f20c90;
+    box-shadow: 0 0 4px #00000040;
+}

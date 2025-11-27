@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Baskin-Robbins — Demo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+<!-- Header / Navbar with image-driven dropdown -->
+<!-- Offcanvas-driven header (paste inside <body>) -->
+<header class="bg-white shadow-sm">
+  <nav class="container d-flex align-items-center py-2">
+    <!-- Burger image triggers the offcanvas -->
+    <button class="btn p-0 border-0 bg-transparent" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu" aria-label="Open menu">
+      <img src="https://cdn.shopify.com/s/files/1/0624/7065/2146/files/Burger_Menu.png?v=1681390129"
+           alt="Open menu" width="48" height="48">
+    </button>
+
+    <!-- Brand -->
+    <a class="navbar-brand ms-3 fw-bold"></a> <img src="https://cdn.shopify.com/s/files/1/0624/7065/2146/files/Main_Logo.png?v=1681288046" height="75" width="256" >
+    <!-- Desktop CTAs (optional) -->
+    <div class="ms-auto d-none d-lg-block">
+      <a class="btn  button--bgpink shop-btn-mobile" href="#order">ORDER NOW</a>
+              <button type="button" class="btn button--bgpink shop-btn-mobile">REWARDS PROGRAM</button>
+              
+    </div>
+  </nav>
+</header>
+
+<!-- Offcanvas panel (menu) -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="offcanvas-body p-0">
+    <!-- Large touch-friendly vertical nav -->
+    <nav class="list-group list-group-flush">
+      <a class="list-group-item list-group-item-action py-3" href="#rewards">Rewards Program</a>
+      <a class="list-group-item list-group-item-action py-3" href="#order">Order Now</a>
+      <a class="list-group-item list-group-item-action py-3" href="#partner">Partner With Us</a>
+      <a class="list-group-item list-group-item-action py-3" href="#about">About Us</a>
+      <a class="list-group-item list-group-item-action py-3" href="#stores">Our Stores</a>
+    </nav>
+
+  
+    <!-- Optional small footer within offcanvas -->
+    <div class="small text-muted p-3 border-top">
+      © <span id="yearOffcanvas"></span> Baskin-Robbins India
+    </div>
+  </div>
+</div>
+
+<script>
+  // small helper: footer year inside offcanvas
+  document.getElementById('yearOffcanvas').textContent = new Date().getFullYear();
+</script>
+
+
+    <!-- Hero -->
+    <section class="hero mt-3">
+      <img src="https://baskinrobbinsindia.com/cdn/shop/files/1920_x_720_-_GST_1920x.jpg?v=1758212422"
+           alt="Baskin Robbins hero"
+           class="img-fluid w-100" />
+    </section>
+
+    <!-- What's New / Features -->
+    <main class="container my-5">
+      <div class="row align-items-center mb-4">
+        <div class="col-md-8">
+          <h2 class="fw-semibold">What's New?</h2>
+          <p class="text-muted">Discover our latest flavours and sundaes — order online or visit your nearest store.</p>
+        </div>
+      </div>
+
+      <!-- Cards -->
+    <img class="h-auto w-full block ls-is-cached lazyloaded"
+        data-src="//baskinrobbinsindia.com/cdn/shop/files/Hazelnut_f0d9c0ff-31a7-43e7-9617-540c0e1db616_414x.png?v=1747050696"
+        width="414" height="414" alt=""
+        src="//baskinrobbinsindia.com/cdn/shop/files/Hazelnut_f0d9c0ff-31a7-43e7-9617-540c0e1db616_414x.png?v=1747050696">
+        <h5>Chocolate & Roasted Hazelnut</h5>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://baskinrobbinsindia.com/cdn/shop/files/Hazelnut_f0d9c0ff-31a7-43e7-9617-540c0e1db616_414x.png?v=1747050696"
+                 class="card-img-top" alt="Chocolate & Roasted Hazelnut">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate & Roasted Hazelnut</h5>
+              <p class="card-text">Sundae — rich chocolate topped with roasted hazelnuts.</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#order" class="btn btn-outline-primary w-100">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/414x300?text=Ice+Cream+2" class="card-img-top" alt="New flavour 2">
+            <div class="card-body">
+              <h5 class="card-title">New Flavour 2</h5>
+              <p class="card-text">Short description for flavour 2 — try this limited edition treat.</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#order" class="btn btn-outline-primary w-100">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://via.placeholder.com/414x300?text=Ice+Cream+3" class="card-img-top" alt="New flavour 3">
+            <div class="card-body">
+              <h5 class="card-title">New Flavour 3</h5>
+              <p class="card-text">A longer description to show how cards keep equal height using .h-100.</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+              <a href="#order" class="btn btn-outline-primary w-100">ORDER NOW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer (simple) -->
+    <footer class="bg-light py-4 mt-5">
+      <div class="container text-center">
+        <small class="text-muted">© <span id="year"></span> Baskin-Robbins — Demo. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    <script>
+      // small helper: set the footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
